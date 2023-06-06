@@ -4,5 +4,5 @@ First change directories to where the databases are stored. This can be done usi
 ```
 cd /nfs/bioblob/btk
 ```
-Do all of the following steps in the [btk] directory then move to your own directory once finished
+Do all of the following steps in the btk directory then move to your own directory once finished
 ## 
