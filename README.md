@@ -10,7 +10,7 @@ cd /nfs/bioblob/btk
 ```
 Do all of the following steps in the btk directory then move to your own directory once finished
 
-## Create a BlobToolKit dataset
+## Example of How to Create a BlobToolKit dataset
 1. Create a new BlobToolKit directory using mkdir:
 ```
 mkdir blobdir
