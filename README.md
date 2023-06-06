@@ -17,6 +17,9 @@ mkdir blobdir
 ```
 2. Create a metadata file by opening a text editor and create a file called B_cinera.yaml. Then write the following in your yaml file:
 ```
+nano
+```
+```
 assembly:
   alias: B_cinera_112
   record_type: contig
