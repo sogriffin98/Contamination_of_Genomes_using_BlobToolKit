@@ -15,7 +15,7 @@ Do all of the following steps in the btk directory then move to your own directo
 ```
 mkdir blobdir
 ```
-2. Create a metadata file by opening a text editor and create a file called <your_species_name>.yaml. Then write the following in your yaml file:
+2. Create a metadata file by opening a text editor and create a file called B_cinera.yaml. Then write the following in your yaml file:
 ```
 assembly:
   alias: B_cinera_112
