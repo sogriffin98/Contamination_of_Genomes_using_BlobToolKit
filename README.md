@@ -9,7 +9,7 @@ BlobTools is a modular command-line solution for visualisation, quality control 
 ```
 conda create -n blobtools
 conda activate blobtools
- conda install -c bioconda blobtools
+conda install -c bioconda blobtools
 ``` 
 ### 2. Diamond 
 Diamond is a sequence aligner for protein and translated DNA searches, designed for high performance analysis of big sequence data (https://github.com/bbuchfink/diamond). It can be installed using the following commands:
