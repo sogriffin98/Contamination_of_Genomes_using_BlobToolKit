@@ -4,28 +4,28 @@ In order to access the server with the databases stored on it and to move the fi
 This can be done by clicking This PC > Computer > Map network drive then chose the drive you want. The folder needed is \\biostore01\bioblob. Then click finish.
 
 ## Programs needed for using BlobToolKit and how to install them:
-### BlobTools
+### 1. BlobTools
 BlobTools is a modular command-line solution for visualisation, quality control and taxonomic partitioning of genome datasets (https://github.com/DRL/blobtools). It can be installed using the following commands:
 ```
 conda create -n blobtools
 conda activate blobtools
  conda install -c bioconda blobtools
 ``` 
-### Diamond 
+### 2. Diamond 
 Diamond is a sequence aligner for protein and translated DNA searches, designed for high performance analysis of big sequence data (https://github.com/bbuchfink/diamond). It can be installed using the following commands:
 ```
 conda create -n diamond
 conda activate diamond
 conda install -c bioconda diamond
 ``` 
-### Blast
+### 3. Blast
 Blast is a tool used for finding regions of local similarity between sequences (https://github.com/ncbi/blast_plus_docs). It can be installed using the following commands:
 ```
 conda create -n blast
 conda activate blast
 conda install -c bioconda blast
 ``` 
-### MiniMap2
+### 4. MiniMap2
 MiniMap2 is a sequence alignment tool (https://github.com/lh3/minimap2). It can be installed using the following commands:
 ```
 conda create -n minimap2
@@ -33,7 +33,7 @@ conda activate minimap2
 conda install -c bioconda minimap2
 ```
 
-### BUSCO
+### 5. BUSCO
 BUSCO is a tool used for quality control, gene prediction and phylogenomics (https://busco.ezlab.org/). It can be installed using the following commands:
 ```
 conda create -n busco
