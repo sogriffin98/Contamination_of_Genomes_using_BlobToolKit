@@ -104,8 +104,7 @@ samtools sort -@30 -O BAM -o coverage.bam -
 conda deactivate
 ```
 ### Create a BUSCO Summary File:
-Use the correct lineage for your species. This can be found using the following link: https://busco.ezlab.org/list_of_lineages.html 
-An example for *Meloidogyne fallax* is below:
+Use the correct lineage for your species (https://busco.ezlab.org/list_of_lineages.html). An example for *Meloidogyne fallax* is below:
 ```
 conda activate busco
 busco -i contigs.fasta -l nematoda_odb10 -o Meloidogyne -m genome --cpu 30
