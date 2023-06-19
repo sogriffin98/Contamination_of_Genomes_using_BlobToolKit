@@ -40,9 +40,9 @@ conda create -n busco
 conda activate busco
  conda install -c bioconda busco
 ```
-
+Once you have all of the programs installed follow the instructions below:
 ## Accessing the Databases
-1. First change directories to where the databases are stored. This can be done using the following command:
+1. Change directories to where the databases are stored. This can be done using the following command:
 ```
 cd /nfs/bioblob/btk
 ```
@@ -90,4 +90,5 @@ An example for *Meloidogyne fallax* is below:
 ```
 busco -i contigs.fasta -l nematoda_odb10 -o Meloidogyne -m genome --cpu 30
 ```
-## Add Files to BlobToolKit Dataset
+## Add Files to BlobToolKit Dataset:
+
