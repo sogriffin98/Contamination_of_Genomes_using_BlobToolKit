@@ -10,6 +10,7 @@ BlobTools is a modular command-line solution for visualisation, quality control 
 conda create -n blobtools
 conda activate blobtools
 conda install -c bioconda blobtools
+conda deactivate
 ``` 
 ### 2. Diamond 
 Diamond is a sequence aligner for protein and translated DNA searches, designed for high performance analysis of big sequence data (https://github.com/bbuchfink/diamond). It can be installed using the following commands:
@@ -17,6 +18,7 @@ Diamond is a sequence aligner for protein and translated DNA searches, designed 
 conda create -n diamond
 conda activate diamond
 conda install -c bioconda diamond
+conda deactivate
 ``` 
 ### 3. Blast
 Blast is a tool used for finding regions of local similarity between sequences (https://github.com/ncbi/blast_plus_docs). It can be installed using the following commands:
@@ -24,6 +26,7 @@ Blast is a tool used for finding regions of local similarity between sequences (
 conda create -n blast
 conda activate blast
 conda install -c bioconda blast
+conda deactivate
 ``` 
 ### 4. MiniMap2
 MiniMap2 is a sequence alignment tool (https://github.com/lh3/minimap2). It can be installed using the following commands:
@@ -31,6 +34,7 @@ MiniMap2 is a sequence alignment tool (https://github.com/lh3/minimap2). It can 
 conda create -n minimap2
 conda activate minimap2
 conda install -c bioconda minimap2
+conda deactivate
 ```
 
 ### 5. BUSCO
@@ -38,7 +42,8 @@ BUSCO is a tool used for quality control, gene prediction and phylogenomics (htt
 ```
 conda create -n busco
 conda activate busco
- conda install -c bioconda busco
+conda install -c bioconda busco
+conda deactivate
 ```
 Once you have all of the programs installed follow the instructions below:
 ## Accessing the Databases
