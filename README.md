@@ -53,7 +53,7 @@ conda install -c bioconda busco
 conda deactivate
 ```
 Once you have all of the programs installed follow the instructions below:
-## Accessing the Databases
+## Accessing the Databases Needed for BlobToolKIt
 1. Change directories to where the databases are stored. This can be done using the following command:
 ```
 cd /nfs/bioblob/btk
