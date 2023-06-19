@@ -3,6 +3,32 @@
 In order to access the server with the databases stored on it and to move the finished files to your server you need to map the network drive.
 This can be done by clicking This PC > Computer > Map network drive then chose the drive you want. The folder needed is \\biostore01\bioblob. Then click finish.
 
+## Programs needed for using BlobToolKit and how to install them:
+### Diamond 
+Diamond is a sequence aligner for protein and translated DNA searches, designed for high performance analysis of big sequence data (https://github.com/bbuchfink/diamond). It can be installed using the following commands:
+```
+conda create -n diamond
+conda activate diamond
+conda install -c bioconda diamond
+```
+### 
+### Blast
+### MiniMap2
+MiniMap2 is a sequence alignment tool (https://github.com/lh3/minimap2). It can be installed using the following commands:
+```
+conda create -n minimap2
+conda activate minimap2
+conda install -c bioconda minimap2
+```
+
+### BUSCO
+BUSCO is a tool used for quality control, gene prediction and phylogenomics (https://busco.ezlab.org/). It can be installed using the following commands:
+```
+conda create -n busco
+conda activate busco
+ conda install -c bioconda busco
+```
+
 ## Accessing the Databases
 1. First change directories to where the databases are stored. This can be done using the following command:
 ```
