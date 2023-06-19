@@ -39,3 +39,17 @@ Using your assembly.fasta or contigs.fasta file from your genome assembly of you
 diamond blastx --query contigs.fasta --db ./uniprot/reference_proteomes.dmnd --outfmt 6 qseqid staxids bitscore qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore --sensitive --max-target-seqs 1 --evalue 1e-25 --threads 30 > diamond.blastx.out
 ```
 Be sure to change the name of the contig.fasta file in the command to match your file name.
+### 3. Create a coverage file:
+Using minimap2 create a coverage file using your assembly.fasta/contigs.fasta file from your genome assembly and your two Illumina reads. Be sure to change the file names in the line below to match your file names. An example is included for *Meloidogyne fallax*:
+```
+minimap2 -ax sr -t 30 contigs.fasta \
+MF1_S12_R1_001_val_1.fq.gz MF1_S12_R2_001_val_2.fq.gz \
+| samtools sort -@30 -O BAM -o coverage.bam -
+```
+### Create a BUSCO Summary File:
+Use the correct lineage for your species. This can be found using the following link: https://busco.ezlab.org/list_of_lineages.html 
+An example for *Meloidogyne fallax* is below:
+```
+busco -i contigs.fasta -l nematoda_odb10 -o Meloidogyne -m genome --cpu 30
+```
+## Add Files to BlobToolKit Dataset
