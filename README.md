@@ -15,8 +15,8 @@ mkdir blobdir_<your_name>
 Do all of the following steps below in the btk directory then move to your own blobdir directory once finished. When you have finished everything move your data out to your own server.
 
 ## Example of How to Create a BlobToolKit dataset
-### 1. Create a metadata file by opening a text editor, e.g. ```nano``` and create a file called ```<your_species_name.yaml```. For example ```M_fallax.yaml```.
-Write the corresponding information for your species in your yaml file, e.g.:
+### 1. Create a metadata file:
+Open a text editor, e.g. ```nano```, and create a file called ```<your_species_name.yaml```. For example ```M_fallax.yaml```. Write the corresponding information for your species in your yaml file, e.g.:
 ```
 assembly:
   alias: M_fallax
