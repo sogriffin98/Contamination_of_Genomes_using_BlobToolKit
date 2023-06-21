@@ -7,9 +7,9 @@ This can be done by clicking This PC > Computer > Map network drive then chose t
 ### 1. BlobTools
 BlobTools is a modular command-line solution for visualisation, quality control and taxonomic partitioning of genome datasets (https://github.com/DRL/blobtools). It can be installed using the following commands:
 ```
-conda create -n blobtools
-conda activate blobtools
-conda install -c bioconda blobtools
+conda create -y -n btk python=3.9
+conda activate btk
+pip install blobtoolkit[full]
 conda deactivate
 ``` 
 ### 2. Diamond 
