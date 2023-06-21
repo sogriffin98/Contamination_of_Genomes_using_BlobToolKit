@@ -62,7 +62,7 @@ cd /nfs/bioblob/btk
 ```
 mkdir blobdir_<your_name>
 ```
-Do all of the following steps below in the btk directory then move to your own blobdir directory once finished. When you have finished everything move your data out to your own server.
+Do all of the following steps below in the btk directory then move to your own blobdir directory once finished. When you have finished everything move your data out to your own directory.
 
 ## Example of How to Create a BlobToolKit dataset
 ### 1. Create a metadata file:
