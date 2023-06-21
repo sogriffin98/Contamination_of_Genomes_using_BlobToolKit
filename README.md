@@ -4,8 +4,8 @@ In order to access the server with the databases stored on it and to move the fi
 This can be done by clicking This PC > Computer > Map network drive then chose the drive you want. The folder needed is \\biostore01\bioblob. Then click finish.
 
 ## Programs needed for using BlobToolKit and how to install them:
-### 1. BlobTools
-BlobTools is a modular command-line solution for visualisation, quality control and taxonomic partitioning of genome datasets (https://github.com/DRL/blobtools). It can be installed using the following commands:
+### 1. BlobToolKit
+BlobToolKit is a modular command-line solution for visualisation, quality control and taxonomic partitioning of genome datasets (https://blobtoolkit.genomehubs.org/install/). It can be installed using the following commands:
 ```
 conda create -y -n btk python=3.9
 conda activate btk
