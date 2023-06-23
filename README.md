@@ -131,7 +131,7 @@ blobtools add \
 --taxdump ./taxdump/ \
 ./btk
 ```
-### 4. Add Coverage
+### 3. Add Coverage
 Again as before this coverage file was created for *Meloidogyne fallax*, make sure you have the correct name for your coverage.bam file.
 ```
 blobtools add \
@@ -139,7 +139,7 @@ blobtools add \
 --threads 30 \
 ./btk
 ```
-### 3. Add BUSCO
+### 4. Add BUSCO
 Again as before this BUSCO file was created for *Meloidogyne fallax*, make sure you have the correct name for your BUSCO file.
 ```
 blobtools add \
