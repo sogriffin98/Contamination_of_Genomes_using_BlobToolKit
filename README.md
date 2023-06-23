@@ -210,3 +210,4 @@ blobtools filter \
      --fasta assembly.fasta \
      --summary STDOUT \
      ./btk/
+
