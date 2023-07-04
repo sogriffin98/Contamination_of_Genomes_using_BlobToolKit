@@ -54,18 +54,18 @@ conda deactivate
 ```
 ## Downloading Databases
 In order to blast search your genome assembly you need to download the diamond, blast and uniprot databases.
-1. First make a diretory for all of your databases:
+### 1. First make a diretory for all of your databases:
 ```
 mkdir btk
 ```
-2. Fetch the NCBI Taxdump:
+### 2. Fetch the NCBI Taxdump:
 ```
 mkdir -p taxdump;
 cd taxdump;
 curl -L ftp://ftp.ncbi.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.tar.gz | tar xzf -;
 cd ..;
 ```
-3. Fetch the nt database:
+### 3. Fetch the nt database:
 ```
 mkdir -p nt
 wget "ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt.??.tar.gz" -P nt/ && \
@@ -73,7 +73,7 @@ wget "ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt.??.tar.gz" -P nt/ && \
             do tar xf $file -C nt && rm $file; \
         done
 ```
-4. Fetch and format the UniProt database:
+### 4. Fetch and format the UniProt database:
 ```
 mkdir -p uniprot
 wget -q -O uniprot/reference_proteomes.tar.gz \
