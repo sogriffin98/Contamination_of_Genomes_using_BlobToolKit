@@ -3,7 +3,7 @@ I used BlobToolKit to look at contamination in the genome assembly of *Meloidogy
 
 ## Mapping network drive for the database server
 In order to access the server with the databases stored on it and to move the finished files to your server you need to map the network drive.
-This can be done by clicking This PC > Computer > Map network drive then chose the drive you want. The folder needed is \\biostore01\bioblob. Then click finish.
+This can be done by clicking This PC > Computer > Map network drive then chose the drive you want. Then click finish.
 
 ## Programs needed for using BlobToolKit and how to install them:
 ### 1. BlobToolKit
