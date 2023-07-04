@@ -1,4 +1,6 @@
 # Contamination of Genomes using BlobToolKit
+I used BlobToolKit to look at contamination in the genome assembly of *Meloidogyne fallax*. I used the a Future Learn tutorial and edited the commands to make it work for my species (https://github.com/blobtoolkit/tutorials/tree/main/futurelearn). I have written instructions using my study species as an example for others to try.
+
 ## Mapping network drive for the database server
 In order to access the server with the databases stored on it and to move the finished files to your server you need to map the network drive.
 This can be done by clicking This PC > Computer > Map network drive then chose the drive you want. The folder needed is \\biostore01\bioblob. Then click finish.
