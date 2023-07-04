@@ -54,7 +54,7 @@ conda deactivate
 ```
 ## Downloading Databases
 In order to blast search your genome assembly you need to download the diamond, blast and uniprot databases.
-### 1. First make a diretory for all of your databases:
+### 1. First make a directory for all of your databases:
 ```
 mkdir btk
 ```
