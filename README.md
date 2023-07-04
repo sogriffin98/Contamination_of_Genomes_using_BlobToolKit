@@ -52,11 +52,52 @@ conda activate busco
 conda install -c bioconda busco
 conda deactivate
 ```
-Once you have all of the programs installed follow the instructions below:
+## Downloading Databases
+In order to blast search your genome assembly you need to download the diamond, blast and uniprot databases.
+1. First make a diretory for all of your databases:
+```
+mkdir btk
+```
+2. Fetch the NCBI Taxdump:
+```
+mkdir -p taxdump;
+cd taxdump;
+curl -L ftp://ftp.ncbi.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.tar.gz | tar xzf -;
+cd ..;
+```
+3. Fetch the nt database:
+```
+mkdir -p nt
+wget "ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt.??.tar.gz" -P nt/ && \
+        for file in nt/*.tar.gz; \
+            do tar xf $file -C nt && rm $file; \
+        done
+```
+4. Fetch and format the UniProt database:
+```
+mkdir -p uniprot
+wget -q -O uniprot/reference_proteomes.tar.gz \
+ ftp.ebi.ac.uk/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/$(curl \
+     -vs ftp.ebi.ac.uk/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/ 2>&1 | \
+     awk '/tar.gz/ {print $9}')
+cd uniprot
+tar xf reference_proteomes.tar.gz
+
+touch reference_proteomes.fasta.gz
+find . -mindepth 2 | grep "fasta.gz" | grep -v 'DNA' | grep -v 'additional' | xargs cat >> reference_proteomes.fasta.gz
+
+echo -e "accession\taccession.version\ttaxid\tgi" > reference_proteomes.taxid_map
+zcat */*/*.idmapping.gz | grep "NCBI_TaxID" | awk '{print $1 "\t" $1 "\t" $3 "\t" 0}' >> reference_proteomes.taxid_map
+
+diamond makedb -p 16 --in reference_proteomes.fasta.gz --taxonmap reference_proteomes.taxid_map --taxonnodes ../taxdump/nodes.dmp -d reference_proteomes.dmnd
+cd -
+```
+
+Once you have all of the programs and databases installed follow the instructions below:
 ## Accessing the Databases Needed for BlobToolKIt
 1. Change directories to where the databases are stored. This can be done using the following command:
 ```
-cd /nfs/bioblob/btk
+cd btk
 ```
 2. Create a new BlobToolKit directory using mkdir and make sure to include your name so you know which one is yours e.g. ```blobdir_sgriffin```:
 ```
