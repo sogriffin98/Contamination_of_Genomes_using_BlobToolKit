@@ -199,19 +199,20 @@ blobtools view \
    
 ![MicrosoftTeams-image (1)](https://github.com/sogriffin98/BlobToolKitMfallax/assets/117275745/8daa0f45-b714-408b-b922-6ff241885249)
 
-2. In Host Name type: 'bio-prod02'
-3. In the Saved Sessions type: 'bioprod02 with blob tunnel' and then click save
-4. Click Connection > SSH > Tunnels on the left side
+2. In Host Name type the name of the server you are using. In this example the server name is 'bio-prod02'
+3. In the Saved Sessions type a name that makes sense for you. In this example I have used 'bioprod02 with blob tunnel'.
+4. Click Save
+5. Click Connection > SSH > Tunnels on the left side
 
 ![MicrosoftTeams-image (2)](https://github.com/sogriffin98/BlobToolKitMfallax/assets/117275745/33502f2e-47ee-4049-ab55-9d7b6247f8bd)
 
-5. In the Add new forwarded port section put the following:
+5. In the Add new forwarded port section put the numbers that were outputted on the terminal window with step 1. An example is below:
 
    5.1. Source port: 8001, Destination: 127.0.0.1:8001
    
    5.2. Source port: 8002, Destination: 127.0.0.1:8002
 
-### 3. Open your browser and go to the URL indicated in the previous command (step 1)
+### 3. Open your browser (i.e. Google Chrome, Internet Explorer, Firefox) and go to the URL indicated in the terminal window (step 1)
 
 ## Filtering blobtoolkit dataset
 Datasets can be filtered based on the values in any variable (e.g. GC proportion and length) or category field (e.g. assigned phylum), or by using a list of identifiers (sequence IDs). Filters may be applied to a complete dataset to allow for use of a reduced dataset without repeating analyses or applied to assembly FASTA and read FASTQ files to allow for reassembly and reanalysis. Filter parameters are all shared between BlobTools and the BlobToolKit Viewer, allowing interactive sessions to be reproduced on the command line.
