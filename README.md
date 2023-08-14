@@ -216,26 +216,25 @@ blobtools view \
 
 ### 3. Open your browser (i.e. Google Chrome, Internet Explorer, Firefox) and go to the URL indicated in the terminal window (step 1)
 
-Filtering my dataset
-
+## Filtering my dataset
 I filtered my Illumina only SPAdes assembly contigs.fasta file using Blobtools. I filtered using the following parameters:
-
-    Coverage: 0.1 - 0.4
-    GC Content: 8-100
-
+* Coverage: 0.1 - 0.4
+* GC Content: 8-100
 I did this using command line using the link from the filtered BlobToolKit webpage to produce a contigs.filtered.fasta file:
-
+```
 blobtools filter \
 --query-string "http://localhost:8010/view/btk/dataset/btk/blob?plotShape=circle&bestsumorder_phylum--Keys=1%2C17%2C0%2C3%2C7%2C30%2C8%2C4&gc--LimitMin=0.1&gc--Min=0.1&gc--LimitMax=0.4&gc--Max=0.4&coverage_cov--LimitMin=8&coverage_cov--Min=8&coverage_cov--LimitMax=100&coverage_cov--Max=100#Settings" \
  --fasta contigs.fasta \
 ./btk
-
-This above filtering does not filter by family or phylum. Therefore, I downloaded the .json file from the filtered BlobToolKit dataset (https://blobtoolkit.genomehubs.org/btk-viewer/viewer-tutorials/reproducing-interactive-sessions/). I applied this filtering to my dataset using the following command to produce a contigs.filtered.filtered.fasta file:
-
+```
+This filtering does not filter by family or phylum. Therefore, I downloaded the .json file from the filtered BlobToolKit dataset (https://blobtoolkit.genomehubs.org/btk-viewer/viewer-tutorials/reproducing-interactive-sessions/). I applied this filtering to my dataset using the following command to produce a contigs.filtered.filtered.fasta file:
+```
 blobtools filter \
 --json btk.current.json \
 --fasta contigs.filtered.fasta \
 ./btk
+```
+
 
 ## Other Filtering Options for BlobToolKit 
 Datasets can be filtered based on the values in any variable (e.g. GC proportion and length) or category field (e.g. assigned phylum), or by using a list of identifiers (sequence IDs). Filters may be applied to a complete dataset to allow for use of a reduced dataset without repeating analyses or applied to assembly FASTA and read FASTQ files to allow for reassembly and reanalysis. Filter parameters are all shared between BlobTools and the BlobToolKit Viewer, allowing interactive sessions to be reproduced on the command line.
