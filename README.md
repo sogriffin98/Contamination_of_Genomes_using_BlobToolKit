@@ -217,7 +217,8 @@ blobtools view \
 ### 3. Open your browser (i.e. Google Chrome, Internet Explorer, Firefox) and go to the URL indicated in the terminal window (step 1)
 
 ## Filtering my dataset
-I filtered my Illumina only SPAdes assembly contigs.fasta file using Blobtools. I filtered using the following parameters:
+I filtered my Illumina only SPAdes assembly contigs.fasta file using Blobtools. 
+I filtered using the following parameters:
 * Coverage: 0.1 - 0.4
 * GC Content: 8-100
 I did this using command line using the link from the filtered BlobToolKit webpage to produce a contigs.filtered.fasta file:
