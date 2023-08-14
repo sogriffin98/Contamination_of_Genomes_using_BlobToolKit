@@ -221,6 +221,7 @@ I filtered my Illumina only SPAdes assembly contigs.fasta file using Blobtools.
 I filtered using the following parameters:
 * Coverage: 0.1 - 0.4
 * GC Content: 8-100
+
 I did this using command line using the link from the filtered BlobToolKit webpage to produce a contigs.filtered.fasta file:
 ```
 blobtools filter \
