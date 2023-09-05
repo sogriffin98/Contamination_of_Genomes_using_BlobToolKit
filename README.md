@@ -1,5 +1,5 @@
 # Contamination of Genomes using BlobToolKit
-I used BlobToolKit to look at contamination in the genome assembly of *Meloidogyne fallax*. I used the a Future Learn tutorial and edited the commands to make it work for my species (https://github.com/blobtoolkit/tutorials/tree/main/futurelearn). I have written instructions using my study species as an example for others to try.
+BlobToolKit (btk) makes use of BlobTools2 to filter genome datasets, assembly files and read files to remove contaminant contigs. I used this tool to filter out contamination in a *Meloidogyne fallax* genome. I used a Future Learn tutorial (https://github.com/blobtoolkit/tutorials/tree/main/futurelearn) and a GitHub repository (https://github.com/blobtoolkit/blobtoolkit) to write the instructions using my study species as an example for others to try.
 
 ## Mapping network drive for the database server
 In order to access the server with the databases stored on it and to move the finished files to your server you need to map the network drive.
