@@ -1,6 +1,11 @@
 # Contamination of Genomes using BlobToolKit
 BlobToolKit (btk) makes use of BlobTools2 to filter genome datasets, assembly files and read files to remove contaminant contigs. I used this tool to filter out contamination in a *Meloidogyne fallax* genome. I used a Future Learn tutorial (https://github.com/blobtoolkit/tutorials/tree/main/futurelearn) and a GitHub repository (https://github.com/blobtoolkit/blobtoolkit) to write the instructions using my study species as an example for others to try.
 
+BlobToolKit is described in the BlobToolKit paper:
+
+    BlobToolKit – Interactive quality assessment of genome assemblies Richard Challis, Edward Richards, Jeena Rajan, Guy Cochrane, Mark Blaxter G3: GENES, GENOMES, GENETICS April 1, 2020 vol. 10 no. 4 1361-1374; https://doi.org/10.1534/g3.119.400908
+
+
 ## Mapping network drive for the database server
 In order to access the server with the databases stored on it and to move the finished files to your server you need to map the network drive.
 This can be done by clicking This PC > Computer > Map network drive then chose the drive you want. Then click finish.
